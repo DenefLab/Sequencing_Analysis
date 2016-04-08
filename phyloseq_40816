@@ -35,3 +35,10 @@ moth.merge = merge_phyloseq(mothur_data, metadata)
 
 #reformat taxonomy file column names 
 colnames(tax_table(moth.merge))
+colnames(tax_table(moth.merge)) <- c("Kingdom", "Phylum", "Class", "Order", 
+ "Family", "Genus", "Rank7", "Rank8")
+
+#filter out samples that I do not want to use, on the tutorial it says to use sample type
+#but for my metadata table I made a column named "Use" that has the same affect
+moth.sub <- subset_samples(moth.merge, Use == "Sample")
+moth.sub <- prune_taxa(taxa_sums(moth.sub) > 0, moth.sub) #unsure of what this step does
