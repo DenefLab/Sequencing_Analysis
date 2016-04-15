@@ -1,0 +1,247 @@
+Original_Name,New_Name,Duplicate,Read_Number,Concentration,Cruise,Use,Sed_or_Mus,Type,Depth_in_Meters,Lake,Month_Collected,Mussel Classification ,Mass_of_Mussel,Mussel_Density,Sediment_Type,GPS_N _degrees,GPS_N _minutes,GPS_W_degrees,GPS_W_minutes
+110B1.S415,110.B1.415,110.B.415,18975,6.71,Transect,Sample,Sediment,Sediment,110,Michigan,April,,,,black mud,N/A,N/A,N/A,N/A
+110B2.S415,110.B2.415,110.B.415,14036,3.2,Transect,Sample,Sediment,Sediment,110,Michigan,April,,,,black mud,N/A,N/A,N/A,N/A
+M15B1.S415,M15.B1.415,M15.B.415,876.8,0.67,Transect,Sample,Sediment,Sediment,15,Michigan,April,,,,sand,,,,
+M15B2.S415,M15.B2.415,M15.B.415,10256,1.32,Transect,Sample,Sediment,Sediment,15,Michigan,April,,,,sand,N/A,N/A,N/A,N/A
+M45B1.S415,M45.B1.415,M45.B.415,12572,0.97,Transect,Sample,Sediment,Sediment,45,Michigan,April,,,,clay,N/A,N/A,N/A,N/A
+M45B2.S415,M45.B2.415,M45.B.415,11543,0.81,Transect,Sample,Sediment,Sediment,45,Michigan,April,,,,clay,N/A,N/A,N/A,N/A
+MLBB1.S415,MLB.B1.415,MLB.B.415,14447,4.65,Transect,Sample,Sediment,Sediment,10,Muskegon,April,,,,black mud,N/A,N/A,N/A,N/A
+MLBB2.S415,MLB.B2.415,MLB.B.415,13964,2.97,Transect,Sample,Sediment,Sediment,10,Muskegon,April,,,,black mud,N/A,N/A,N/A,N/A
+110B1.S815,110.B1.815,110.B.815,11945,4.79,Transect,Sample,Sediment,Sediment,110,Michigan,August,,,,black mud,43,12.102,86,34.167
+110B2.S815,110.B2.815,110.B.815,11020,8.21,Transect,Sample,Sediment,Sediment,110,Michigan,August,,,,black mud,43,12.102,86,34.167
+M15B1.S815,M15.B1.815,M15.B.815,8486,3.7,Transect,Sample,Sediment,Sediment,15,Michigan,August,,,,sand,43,11.112,86,20.473
+M15B2.S815,M15.B2.815,M15.B.815,9813,6.33,Transect,Sample,Sediment,Sediment,15,Michigan,August,,,,sand,43,11.112,86,20.473
+M45B1.S815,M45.B1.815,M45.B.815,8623,4.12,Transect,Sample,Sediment,Sediment,45,Michigan,August,,,,clay,43,12.131,86,26.902
+M45B2.S815,M45.B2.815,M45.B.815,9395,4.02,Transect,Sample,Sediment,Sediment,45,Michigan,August,,,,clay,43,12.131,86,26.902
+MLBB1.S815,MLB.B1.815,MLB.B.815,N/A,18.14,Transect,Sample,Sediment,Sediment,10,Muskegon,August,,,,black mud,43,14.19,86,16.769
+MLBB2.S815,MLB.B2.815,MLB.B.815,7971,16.39,Transect,Sample,Sediment,Sediment,10,Muskegon,August,,,,black mud,43,14.19,86,16.769
+110M1.815,110.M1.815,110.M.815,12484,16.28,Transect,Sample,Mussel,Whole Mussel,110,Michigan,August,Small,0.1,,black mud,43,12.102,86,34.167
+110M2.815,110.M2.815,110.M.815,11060,20.53,Transect,Sample,Mussel,Whole Mussel,110,Michigan,August,Small,0.1,,black mud,43,12.102,86,34.167
+M45M1.815,M45.M1.815,M45.M.815,19120,9.39,Transect,Sample,Mussel,Whole Mussel,45,Michigan,August,Medium,0.4,,clay,43,12.131,86,26.902
+M45M2.815,M45.M2.815,M45.M.815,9138,5.24,Transect,Sample,Mussel,Whole Mussel,45,Michigan,August,Large,0.5,,clay,43,12.131,86,26.902
+Q05.L1.S,Q05.L1.S,Q05.L.S,11012,4.79,Transect,Sample,Mussel,Mussel Shell,45,Michigan,July,Large,0.8,Few-Moderate,soft silt,43,44.7,-87,76.983
+Q05.L2.S,Q05.L2.S,Q05.L.S,12178,5.4,Transect,Sample,Mussel,Mussel Shell,45,Michigan,July,Large,0.7,Few-Moderate,soft silt,43,44.7,-87,76.983
+Q05.M1.S,Q05.M1.S,Q05.M.S,5872,1.56,Transect,Sample,Mussel,Mussel Shell,45,Michigan,July,Large,0.6,Few-Moderate,soft silt,43,44.7,-87,76.983
+Q05.M2.S,Q05.M2.S,Q05.M.S,2204,1.03,Transect,Sample,Mussel,Mussel Shell,45,Michigan,July,Medium,0.3,Few-Moderate,soft silt,43,44.7,-87,76.983
+Q05.S1.S,Q05.S1.S,Q05.S.S,7408,1.24,Transect,Sample,Mussel,Mussel Shell,45,Michigan,July,Small,0.2,Few-Moderate,soft silt,43,44.7,-87,76.983
+Q05.S1.S2,Q08.S1.S,Q08.S.S,233.3,3.11,Transect,Sample,Mussel,Mussel Shell,45,Michigan,July,Small,0.1,Few,silt over sandy silt,44,81.667,-86,18.45
+Q05.S2.S,Q05.S2.S,Q05.S.S,6934,0.9,Transect,Sample,Mussel,Mussel Shell,45,Michigan,July,Small,0.1,Few-Moderate,soft silt,43,44.7,-87,76.983
+Q05.S2.S2,Q08.S2.S,Q08.S.S,1207,3.72,Transect,Sample,Mussel,Mussel Shell,45,Michigan,July,Small,0.1,Few,silt over sandy silt,44,81.667,-86,18.45
+Q08.L1.S,Q08.L1.S,Q08.L.S,3201,1.31,Transect,Sample,Mussel,Mussel Shell,45,Michigan,July,Medium,0.4,Few,silt over sandy silt,44,81.667,-86,18.45
+Q08.L2.S,Q08.L2.S,Q08.L.S,19530,1.97,Transect,Sample,Mussel,Mussel Shell,45,Michigan,July,Medium,0.4,Few,silt over sandy silt,44,81.667,-86,18.45
+Q08.M1.S,Q08.M1.S,Q08.M.S,5759,1.27,Transect,Sample,Mussel,Mussel Shell,45,Michigan,July,Medium,0.4,Few,silt over sandy silt,44,81.667,-86,18.45
+Q08.M2.S,Q08.M2.S,Q08.M.S,13087,1.69,Transect,Sample,Mussel,Mussel Shell,45,Michigan,July,Small,0.2,Few,silt over sandy silt,44,81.667,-86,18.45
+Q09.L1.S,Q09.L1.S,Q09.L.S,3290,5.7,Transect,Sample,Mussel,Mussel Shell,45,Michigan,July,Medium,0.3,Many,silty sand,45,44.567,-85,22.183
+Q09.L2.S,Q09.L2.S,Q09.L.S,4054,25.94,Transect,Sample,Mussel,Mussel Shell,45,Michigan,July,Medium,0.3,Many,silty sand,45,44.567,-85,22.183
+Q09.M1.S,Q09.M1.S,Q09.M.S,4593,10.81,Transect,Sample,Mussel,Mussel Shell,45,Michigan,July,Small,0.2,Many,silty sand,45,44.567,-85,22.183
+Q09.M2.S,Q09.M2.S,Q09.M.S,4368,1.19,Transect,Sample,Mussel,Mussel Shell,45,Michigan,July,Small,0.2,Many,silty sand,45,44.567,-85,22.183
+Q09.S1.S,Q09.S1.S,Q09.S.S,6717,1.08,Transect,Sample,Mussel,Mussel Shell,45,Michigan,July,Small,0.1,Many,silty sand,45,44.567,-85,22.183
+Q09.S2.S,Q09.S2.S,Q09.S.S,5775,2.65,Transect,Sample,Mussel,Mussel Shell,45,Michigan,July,Small,0.1,Many,silty sand,45,44.567,-85,22.183
+Q11.L2.S,Q11.L2.S,Q11.L.S,7239,2.43,Transect,Sample,Mussel,Mussel Shell,45,Michigan,July,Large,0.5,Many,silty sand,44,41.3,-86,33.95
+Q11.M1.S,Q11.M1.S,Q11.M.S,7867,1.37,Transect,Sample,Mussel,Mussel Shell,45,Michigan,July,Large,0.6,Many,silty sand,44,41.3,-86,33.95
+Q11.M2.S,Q11.M2.S,Q11.M.S,17712,1.73,Transect,Sample,Mussel,Mussel Shell,45,Michigan,July,Medium,0.4,Many,silty sand,44,41.3,-86,33.95
+Q11.S1.S,Q11.S1.S,Q11.S.S,12902,2.02,Transect,Sample,Mussel,Mussel Shell,45,Michigan,July,Medium,0.4,Many,silty sand,44,41.3,-86,33.95
+Q11.S2.S,Q11.S2.S,Q11.S.S,1802,0.77,Transect,Sample,Mussel,Mussel Shell,45,Michigan,July,Medium,0.3,Many,silty sand,44,41.3,-86,33.95
+Q05.L1.T,Q05.L1.T,Q05.L.T,2276,22.75,Transect,Sample,Mussel,Mussel Tissue,45,Michigan,July,Large,0.5,Few-Moderate,soft silt,43,44.7,-87,76.983
+Q05.L2.T,Q05.L2.T,Q05.L.T,209.1,56.98,Transect,Sample,Mussel,Mussel Tissue,45,Michigan,July,Medium,0.3,Few-Moderate,soft silt,43,44.7,-87,76.983
+Q05.M1.T,Q05.M1.T,Q05.M.T,1005,7.06,Transect,Sample,Mussel,Mussel Tissue,45,Michigan,July,Medium,0.3,Few-Moderate,soft silt,43,44.7,-87,76.983
+Q05.M2.T,Q05.M2.T,Q05.M.T,6628,0.76,Transect,Sample,Mussel,Mussel Tissue,45,Michigan,July,Small,0.2,Few-Moderate,soft silt,43,44.7,-87,76.983
+Q05.S1.T,Q05.S1.T,Q05.S.T,1826,4.77,Transect,Sample,Mussel,Mussel Tissue,45,Michigan,July,Small,0.1,Few-Moderate,soft silt,43,44.7,-87,76.983
+Q05.S1.T2,Q08.S1.T,Q08.S.T,651.5,26.62,Transect,Sample,Mussel,Mussel Tissue,45,Michigan,July,Small,0.1,Few,silt over sandy silt,44,81.667,-86,18.45
+Q05.S2.T,Q05.S2.T,Q05.S.T,64.35,2.25,Transect,Sample,Mussel,Mussel Tissue,45,Michigan,July,Small,0.1,Few-Moderate,soft silt,43,44.7,-87,76.983
+Q05.S2.T2,Q08.S2.T,Q08.S.T,11141,11.14,Transect,Sample,Mussel,Mussel Tissue,45,Michigan,July,Small,<0.1,Few,silt over sandy silt,44,81.667,-86,18.45
+Q08.L1.T,Q08.L1.T,Q08.L.T,6459,3.73,Transect,Sample,Mussel,Mussel Tissue,45,Michigan,July,Small,0.2,Few,silt over sandy silt,44,81.667,-86,18.45
+Q08.L2.T,Q08.L2.T,Q08.L.T,16393,7.82,Transect,Sample,Mussel,Mussel Tissue,45,Michigan,July,Small,0.2,Few,silt over sandy silt,44,81.667,-86,18.45
+Q08.M1.T,Q08.M1.T,Q08.M.T,3338,3.71,Transect,Sample,Mussel,Mussel Tissue,45,Michigan,July,Small,0.1,Few,silt over sandy silt,44,81.667,-86,18.45
+Q08.M2.T,Q08.M2.T,Q08.M.T,2445,11.43,Transect,Sample,Mussel,Mussel Tissue,45,Michigan,July,Small,0.1,Few,silt over sandy silt,44,81.667,-86,18.45
+Q09.L1.T,Q09.L1.T,Q09.L.T,1569,65,Transect,Sample,Mussel,Mussel Tissue,45,Michigan,July,Small,0.2,Many,silty sand,45,44.567,-85,22.183
+Q09.L2.T,Q09.L2.T,Q09.L.T,1303,37.75,Transect,Sample,Mussel,Mussel Tissue,45,Michigan,July,Small,0.1,Many,silty sand,45,44.567,-85,22.183
+Q09.M1.T,Q09.M1.T,Q09.M.T,3041,145.38,Transect,Sample,Mussel,Mussel Tissue,45,Michigan,July,Small,0.1,Many,silty sand,45,44.567,-85,22.183
+Q09.M2.T,Q09.M2.T,Q09.M.T,4521,7.7,Transect,Sample,Mussel,Mussel Tissue,45,Michigan,July,Small,0.1,Many,silty sand,45,44.567,-85,22.183
+Q09.S1.T,Q09.S1.T,Q09.S.T,3756,11.49,Transect,Sample,Mussel,Mussel Tissue,45,Michigan,July,Small,0.1,Many,silty sand,45,44.567,-85,22.183
+Q09.S2.T,Q09.S2.T,Q09.S.T,,21.24,Transect,Sample,Mussel,Mussel Tissue,45,Michigan,July,Small,<0.1,Many,silty sand,45,44.567,-85,22.183
+Q11.L2.T,Q11.L2.T,Q11.L.T,7802,36.82,Transect,Sample,Mussel,Mussel Tissue,45,Michigan,July,Small,0.2,Many,silty sand,44,41.3,-86,33.95
+Q11.M1.T,Q11.M1.T,Q11.M.T,4947,10.41,Transect,Sample,Mussel,Mussel Tissue,45,Michigan,July,Small,0.1,Many,silty sand,44,41.3,-86,33.95
+Q11.M2.T,Q11.M2.T,Q11.M.T,10377,14.22,Transect,Sample,Mussel,Mussel Tissue,45,Michigan,July,Small,0.1,Many,silty sand,44,41.3,-86,33.95
+Q11.S1.T,Q11.S1.T,Q11.S.T,7931,19.44,Transect,Sample,Mussel,Mussel Tissue,45,Michigan,July,Small,<0.1,Many,silty sand,44,41.3,-86,33.95
+Q11.S2.T,Q11.S2.T,Q11.S.T,2695,4.69,Transect,Sample,Mussel,Mussel Tissue,45,Michigan,July,Small,0.1,Many,silty sand,44,41.3,-86,33.95
+110B1.S715,110.B1.715,110.B.715,9098,2.05,Transect,Sample,Sediment,Sediment,110,Michigan,July,,,,black mud,43,12.044,86,33.951
+110B2.S715,110.B2.714,110.B.714,9564,4.81,Transect,Sample,Sediment,Sediment,110,Michigan,July,,,,black mud,43,12.044,86,33.951
+M15B1.S715,M15.B1.715,M15.B.715,466.5,0.7,Transect,Sample,Sediment,Sediment,15,Michigan,July,,,,sand,43,11.302,86,20.675
+M15B2.S715,M15.B2.715,M15.B.715,3917,1.58,Transect,Sample,Sediment,Sediment,15,Michigan,July,,,,sand,43,11.302,86,20.675
+M45B1.S715,M45.B1.715,M45.B.715,5784,1.09,Transect,Sample,Sediment,Sediment,45,Michigan,July,,,,clay,43,12.255,86,26.84
+M45B2.S715,M45.B2.715,M45.B.715,4223,0.64,Transect,Sample,Sediment,Sediment,45,Michigan,July,,,,clay,43,12.255,86,26.84
+LM15.S01,L01.B3.715,L01.B.715,7191,4.08,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Many,sandy silt,43,50.083,-86,60.367
+LM15.S02,L01.B2.715,L01.B.715,8655,7.46,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Many,sandy silt,43,50.083,-86,60.367
+LM15.S03,L01.B1.715,L01.B.715,8269,5.77,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Many,sandy silt,43,50.083,-86,60.367
+LM15.S04,L02.B3.715,L02.B.715,7811,12.13,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Moderate,silty sand,44,41.3,-86,28.633
+LM15.S05,L02.B2.715,L02.B.715,7239,7.78,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Moderate,silty sand,44,41.3,-86,28.633
+LM15.S06,L02.B1.715,L02.B.715,7794,10.02,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Moderate,silty sand,44,41.3,-86,28.633
+LM15.S07,L03.B3.715,L03.B.715,7963,7.99,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Moderate-high,silty sand,45,24.2,-85,55.6
+LM15.S08,L03.B2.715,L03.B.715,8213,5.56,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Moderate-high,silty sand,45,24.2,-85,55.6
+LM15.S09,L03.B1.715,L03.B.715,6628,6.61,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Moderate-high,silty sand,45,24.2,-85,55.6
+LM15.S10,L04.B3.715,L04.B.715,7947,9.67,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Moderate,silty sand,42,50.083,-86,36.433
+LM15.S11,L04.B2.715,L04.B.715,7400,12.06,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Moderate,silty sand,42,50.083,-86,36.433
+LM15.S12,L04.B1.715,L04.B.715,6950,12.56,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Moderate,silty sand,42,50.083,-86,36.433
+LM15.S13,L05.B3.715,L05.B.715,5438,12,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Few-Moderate,soft silt,43,44.7,-87,76.983
+LM15.S14,L05.B2.715,L05.B.715,5639,9.1,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Few-Moderate,soft silt,43,44.7,-87,76.983
+LM15.S15,L05.B1.715,L05.B.715,5920,9.96,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Few-Moderate,soft silt,43,44.7,-87,76.983
+LM15.S16,L06.B3.715,L06.B.715,6057,7.61,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Few,soft silt,41,81.667,-87,4.833
+LM15.S17,L06.B2.715,L06.B.715,5237,11.23,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Few,soft silt,41,81.667,-87,4.833
+LM15.S18,L06.B1.715,L06.B.715,6427,8.97,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Few,soft silt,41,81.667,-87,4.833
+LM15.S19,L07.B3.715,L07.B.715,6057,13.64,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,High,soft silt,44,85.733,-87,15.1
+LM15.S20,L07.B2.715,L07.B.715,5341,8.35,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,High,soft silt,44,85.733,-87,15.1
+LM15.S21,L07.B1.715,L07.B.715,9838,8.89,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,High,soft silt,44,85.733,-87,15.1
+LM15.S22,L08.B3.715,L08.B.715,11398,8.34,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Few,silt over sandy silt,44,81.667,-86,18.45
+LM15.S23,L08.B2.715,L08.B.715,11125,6.14,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Few,silt over sandy silt,44,81.667,-86,18.45
+LM15.S24,L08.B1.715,L08.B.715,12605,8.15,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Few,silt over sandy silt,44,81.667,-86,18.45
+LM15.S25,L09.B3.715,L09.B.715,12315,6.9,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Many,silty sand,45,44.567,-85,22.183
+LM15.S26,L09.B2.715,L09.B.715,11318,9.89,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Many,silty sand,45,44.567,-85,22.183
+LM15.S27,L09.B1.715,L09.B.715,10722,12.51,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Many,silty sand,45,44.567,-85,22.183
+LM15.S28,L10.B3.715,L10.B.715,7963,12.06,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Many,sandy silt,42,34.833,-87,61.667
+LM15.S29,L10.B2.715,L10.B.715,6805,15.22,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Many,sandy silt,42,34.833,-87,61.667
+LM15.S30,L10.B1.715,L10.B.715,6548,18,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Many,sandy silt,42,34.833,-87,61.667
+LM15.S31,L11.B3.715,L11.B.715,6507,15.63,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Many,silty sand,44,41.3,-86,33.95
+LM15.S32,L11.B2.715,L11.B.715,7167,24.11,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Many,silty sand,44,41.3,-86,33.95
+LM15.S33,L11.B1.715,L11.B.715,6556,8.76,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Many,silty sand,44,41.3,-86,33.95
+LM15.S34,L12.B3.715,L12.B.715,7022,12.49,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Many,silty sand,43,13.75,-86,36.167
+LM15.S35,L12.B2.715,L12.B.715,6749,12.32,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Many,silty sand,43,13.75,-86,36.167
+LM15.S36,L12.B1.715,L12.B.715,6041,16.22,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Many,silty sand,43,13.75,-86,36.167
+LM15.S37,L13.B3.715,L13.B.715,9106,8.2,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Many,silty sand,41,93.5,-87,25.167
+LM15.S38,L13.B2.715,L13.B.715,10586,2.81,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Many,silty sand,41,93.5,-87,25.167
+LM15.S39,L13.B1.715,L13.B.715,9926,13.55,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Many,silty sand,41,93.5,-87,25.167
+LM15.S40,L14.B3.715,L14.B.715,9114,13.12,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Many,sandy silt,42,55.417,-87,58.717
+LM15.S41,L14.B2.715,L14.B.715,8880,15.09,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Many,sandy silt,42,55.417,-87,58.717
+LM15.S42,L14.B1.715,L14.B.715,9476,18.73,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Many,sandy silt,42,55.417,-87,58.717
+LM15.S43,L15.B3.715,L15.B.715,7899,10.53,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Few,silty sand,43,20,-86,51.667
+LM15.S44,L15.B2.715,L15.B.715,7730,10.86,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Few,silty sand,43,20,-86,51.667
+LM15.S45,L15.B1.715,L15.B.715,4850,13.7,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Few,silty sand,43,20,-86,51.667
+LM15.S46,L16.B3.715,L16.B.715,5277,11.7,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Few,silt,42,75.067,-87,69.633
+LM15.S47,L16.B2.715,L16.B.715,4971,11.15,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Few,silt,42,75.067,-87,69.633
+LM15.S48,L16.B1.715,L16.B.715,5784,6.55,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Few,silt,42,75.067,-87,69.633
+LM15.S49,L17.B3.715,L17.B.715,4432,3.03,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Many,clay and sand,42,37.5,-87,50
+LM15.S50,L17.B2.715,L17.B.715,5060,4.01,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Many,clay and sand,42,37.5,-87,50
+LM15.S51,L17.B1.715,L17.B.715,3805,2.44,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Many,clay and sand,42,37.5,-87,50
+LM15.S52,L18.B3.715,L18.B.715,4722,7.13,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Few,silty sand,42,64.968,-87,63.317
+LM15.S53,L18.B2.715,L18.B.715,12556,11.25,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Few,silty sand,42,64.968,-87,63.317
+LM15.S54,L18.B1.715,L18.B.715,9307,8.31,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Few,silty sand,42,64.968,-87,63.317
+LM15.S55,L19.B3.715,L19.B.715,11800,6.55,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Moderate,silt over sandy silt,45,90.9,-85,2.5
+LM15.S56,L19.B2.715,L19.B.715,13634,4.77,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Moderate,silt over sandy silt,45,90.9,-85,2.5
+LM15.S57,L19.B1.715,L19.B.715,12219,11.89,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Moderate,silt over sandy silt,45,90.9,-85,2.5
+LM15.S58,L20.B3.715,L20.B.715,14656,9.35,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Many,silty sand,42,63,-86,43.333
+LM15.S59,L20.B2.715,L20.B.715,11615,21.92,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Many,silty sand,42,63,-86,43.333
+LM15.S60,L20.B1.715,L20.B.715,10755,9.68,Survey,Sample,Sediment,Sediment,45,Michigan,July,,,Many,silty sand,42,63,-86,43.333
+MBRB1.715,MBR.B1.715,MBR.B.715,9620,14.87,Muskegon,Sample,Sediment,Sediment,16,Muskegon,July,,,,,N/A,N/A,N/A,N/A
+MBRB2.715,MBR.B2.715,MBR.B.715,9387,9.8,Muskegon,Sample,Sediment,Sediment,16,Muskegon,July,,,,,N/A,N/A,N/A,N/A
+MDPB1.715,MDP.B2.715,MDP.B.715,10071,14.38,Muskegon,Sample,Sediment,Sediment,24,Muskegon,July,,,,,N/A,N/A,N/A,N/A
+MDPB2.715,MDP.B1.715,MDP.B.715,9162,8.06,Muskegon,Sample,Sediment,Sediment,24,Muskegon,July,,,,,N/A,N/A,N/A,N/A
+MINB1.715,MIN.B1.715,MIN.B.715,8631,6.13,Muskegon,Sample,Sediment,Sediment,8,Muskegon,July,,,,,N/A,N/A,N/A,N/A
+MINB2.715,MIN.B2.715,MIN.B.715,10795,7.82,Muskegon,Sample,Sediment,Sediment,8,Muskegon,July,,,,,N/A,N/A,N/A,N/A
+MLBB1.S715,MLB.B1.715,MLB.B.715,6274,10.12,Transect,Sample,Sediment,Sediment,10,Muskegon,July,,,,black mud,43,14.225,86,16.787
+MLBB2.S715,MLB.B2.715,MLB.B.715,5470,6.94,Transect,Sample,Sediment,Sediment,10,Muskegon,July,,,,black mud,43,14.225,86,16.787
+MOTB1.715,MOT.B1.715,MOT.B.715,7103,2.67,Muskegon,Sample,Sediment,Sediment,11,Muskegon,July,,,,,,,,
+MOTB2.715,MOT.B2.715,MOT.B.715,7095,3.27,Muskegon,Sample,Sediment,Sediment,11,Muskegon,July,,,,,,,,
+110M1.715,110.M1.715,110.M.715,7875,31.03,Transect,Sample,Mussel,Whole Mussel,110,Michigan,July,Small,0.1,,black mud,43,12.044,86,33.951
+110M2.715,110.M2.715,110.M.715,7553,30.69,Transect,Sample,Mussel,Whole Mussel,110,Michigan,July,Small,0.1,,black mud,43,12.044,86,33.951
+LM15.Q01.1,Q01.B1.715,Q01.B.715,1046,2.7,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Medium,0.4,Many,sandy silt,43,50.083,-86,60.367
+LM15.Q01.2,Q01.B2.715,Q01.B.715,8148,4.1,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Large,0.5,Many,sandy silt,43,50.083,-86,60.367
+LM15.Q02.1,Q02.B1.715,Q02.B.715,3226,3.06,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Large,0.5,Moderate,silty sand,44,41.3,-86,28.633
+LM15.Q02.2,Q02.B2.715,Q02.B.715,1866,3.56,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Medium,0.4,Moderate,silty sand,44,41.3,-86,28.633
+LM15.Q03.1,Q03.B1.715,Q03.B.715,1367,1.66,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Medium,0.4,Moderate-high,silty sand,45,24.2,-85,55.6
+LM15.Q03.2,Q03.B2.715,Q03.B.715,723.9,2.57,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Medium,0.4,Moderate-high,silty sand,45,24.2,-85,55.6
+LM15.Q04.1,Q04.B1.715,Q04.B.715,900.9,4.51,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Small,0.2,Moderate,silty sand,42,50.083,-86,36.433
+LM15.Q04.2,Q04.B2.715,Q04.B.715,3531,27.58,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Medium,0.4,Moderate,silty sand,42,50.083,-86,36.433
+LM15.Q05.1,Q05.B1.715,Q05.B.715,4424,10.36,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Large,0.8,Few,soft silt,43,44.7,-87,76.983
+LM15.Q05.2,Q05.B2.715,Q05.B.715,1432,5.78,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Large,0.6,Few,soft silt,43,44.7,-87,76.983
+LM15.Q06.1,Q06.B1.715,Q06.B.715,3113,4.03,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Large,0.6,Very Few,soft silt,41,81.667,-87,4.833
+LM15.Q06.2,Q06.B2.715,Q06.B.715,,9.51,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Medium,0.3,Very Few,soft silt,41,81.667,-87,4.833
+LM15.Q07.1,Q07.B1.715,Q07.B.715,1408,4.89,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Medium,0.3,High,soft silt,44,85.733,-87,15.1
+LM15.Q07.2,Q07.B2.715,Q07.B.715,2437,7.24,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Medium,0.4,High,soft silt,44,85.733,-87,15.1
+LM15.Q08.1,Q08.B1.715,Q08.B.715,4850,4.98,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Medium,0.4,Few-Moderate,silt over sandy silt,44,81.667,-86,18.45
+LM15.Q08.2,Q08.B2.715,Q08.B.715,4657,8.3,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Medium,0.4,Few-Moderate,silt over sandy silt,44,81.667,-86,18.45
+LM15.Q09.1,Q09.B1.715,Q09.B.715,4657,6.11,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Medium,0.4,Many ,silty sand,45,44.567,-85,22.183
+LM15.Q09.2,Q09.B2.715,Q09.B.715,3708,11.04,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Medium,0.4,Many,silty sand,45,44.567,-85,22.183
+LM15.Q10.1,Q10.B1.715,Q10.B.715,5108,8.72,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Medium,0.4,Many,sandy silt,42,34.833,-87,61.667
+LM15.Q10.2,Q10.B2.715,Q10.B.715,,1.19,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Medium,0.4,Many,sandy silt,42,34.833,-87,61.667
+LM15.Q11.1,Q11.B1.715,Q11.B.715,8872,14.11,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Medium,0.3,Many,silty sand,44,41.3,-86,33.95
+LM15.Q11.2,Q11.B2.715,Q11.B.715,3475,3.66,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Medium,0.3,Many,silty sand,44,41.3,-86,33.95
+LM15.Q12.1,Q12.B1.715,Q12.B.715,6845,7.5,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Medium,0.4,Many,silty sand,43,13.75,-86,36.167
+LM15.Q12.2,Q12.B2.715,Q12.B.715,4279,30.06,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Medium,0.3,Many,silty sand,43,13.75,-86,36.167
+LM15.Q13.1,Q13.B1.715,Q13.B.715,3234,2.55,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Medium,0.3,Many,silty sand,41,93.5,-87,25.167
+LM15.Q13.2,Q13.B2.715,Q13.B.715,5317,4.47,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Small,0.2,Many,silty sand,41,93.5,-87,25.167
+LM15.Q14.1,Q14.B1.715,Q14.B.715,7006,4.73,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Medium,0.3,Many,sandy silt,42,55.417,-87,58.717
+LM15.Q14.2,Q14.B2.715,Q14.B.715,9854,6,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Medium,0.3,Many,sandy silt,42,55.417,-87,58.717
+LM15.Q15.1,Q15.B1.715,Q15.B.715,14752,28.61,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Medium,0.3,Few,silty sand,43,20,-86,51.667
+LM15.Q15.2,Q15.B2.715,Q15.B.715,8856,43.02,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Medium,0.4,Few,silty sand,43,20,-86,51.667
+LM15.Q16.1,Q16.B1.715,Q16.B.715,6572,55.06,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Large,1,Few,silt,42,75.067,-87,69.633
+LM15.Q16.2,Q16.B2.715,Q16.B.715,2880,67.41,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Large,0.5,Few,silt,42,75.067,-87,69.633
+LM15.Q17.1,Q17.B1.715,Q17.B.715,7392,9.15,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Small,0.2,Many,clay and sand,42,37.5,-87,50
+LM15.Q17.2,Q17.B2.715,Q17.B.715,6411,19.26,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Medium,0.3,Many,clay and sand,42,37.5,-87,50
+LM15.Q18.1,Q18.B1.715,Q18.B.715,4086,16.39,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Medium,0.3,Very Few,silty sand,42,64.968,-87,63.317
+LM15.Q18.2,Q18.B2.715,Q18.B.715,5357,11.54,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Small,0.2,Very Few,silty sand,42,64.968,-87,63.317
+LM15.Q19.1,Q19.B1.715,Q19.B.715,2695,85.92,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Large,0.8,Moderate,silt over sandy silt,45,90.9,-85,2.5
+LM15.Q19.2,Q19.B2.715,Q19.B.715,4553,47.19,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Large,0.6,Moderate,silt over sandy silt,45,90.9,-85,2.5
+LM15.Q20.1,Q20.B1.715,Q20.B.715,3966,16.08,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Medium,0.3,Many,silty sand,42,63,-86,43.333
+LM15.Q20.2,Q20.B2.715,Q20.B.715,3427,54.07,Survey,Sample,Mussel,Whole Mussel,45,Michigan,July,Medium,0.3,Many,silty sand,42,63,-86,43.333
+M45M1.715,M45.M1.715,M45.M.715,11897,2.67,Transect,Sample,Mussel,Whole Mussel,45,Michigan,July,Small,0.2,,clay,43,12.255,86,26.84
+M45M2.715,M45.M2.715,M45.M.715,2960,0.93,Transect,Sample,Mussel,Whole Mussel,45,Michigan,July,Small,0.1,,clay,43,12.255,86,26.84
+M45B1.S615,M45.B1.615,M45.B.615,17351,6.31,Transect,Sample,Sediment,Sediment,45,Michigan,June,,,,clay,43,12.255,86,26.84
+M45B2.S615,M45.B2.615,M45.B.615,16538,5.85,Transect,Sample,Sediment,Sediment,45,Michigan,June,,,,clay,43,12.255,86,26.84
+110B1.S615,110.B1.615,110.B.615,10658,3.51,Transect,Sample,Sediment,Sediment,110,Michigan,June,,,,black mud,43,12.044,86,33.951
+110B2.S615,110.B2.615,110.B.615,16192,4.67,Transect,Sample,Sediment,Sediment,110,Michigan,June,,,,black mud,43,12.044,86,33.951
+M15B1.S615,M15.B1.615,M15.B.615,16128,5.76,Transect,Sample,Sediment,Sediment,15,Michigan,June,,,,sand,43,11.302,86,20.675
+M15B2.S615,M15.B2.615,M15.B.615,13876,2.11,Transect,Sample,Sediment,Sediment,15,Michigan,June,,,,sand,43,11.302,86,20.675
+MLBB1.S615,MLB.B1.615,MLB.B.615,20938,8.65,Transect,Sample,Sediment,Sediment,10,Muskegon,June,,,,black mud,43,14.225,86,16.787
+MLBB2.S615,MLB.B2.615,MLB.B.615,18565,7.49,Transect,Sample,Sediment,Sediment,10,Muskegon,June,,,,black mud,43,14.225,86,16.787
+110M1.615,110.M1.615,110.M.615,13377,15.5,Transect,Sample,Mussel,Whole Mussel,110,Michigan,June,Medium,0.3,,black mud,43,12.044,86,33.951
+110M2.615,110.M2.615,110.M.615,8245,29.68,Transect,Sample,Mussel,Whole Mussel,110,Michigan,June,Small,0.2,,black mud,43,12.044,86,33.951
+M45M1.615,M45.M1.615,M45.M.615,5108,17.37,Transect,Sample,Mussel,Whole Mussel,45,Michigan,June,Medium,0.4,,clay ,43,12.255,86,26.84
+M45M2.615,M45.M2.615,M45.M.615,14817,25,Transect,Sample,Mussel,Whole Mussel,45,Michigan,June,Medium,0.3,,clay,43,12.255,86,26.84
+110B2.S515,110.B2.515,110.B.515,9701,5.3,Transect,Sample,Sediment,Sediment,110,Michigan,May,,,,black mud,43,11.994,86,34.408
+M15B1.S515,M15.B1.515,M15.B.515,7682,2.73,Transect,Sample,Sediment,Sediment,15,Michigan,May,,,,sand,,,,
+M15B2.S515,M15.B2.515,M15.B.515,7175,1.93,Transect,Sample,Sediment,Sediment,15,Michigan,May,,,,sand,,,,
+M45B1.S515,M45.B1.515,M45.B.515,11092,13.23,Transect,Sample,Sediment,Sediment,45,Michigan,May,,,,clay,43,12.305,86,26.889
+M45B2.S515,M45.B2.515,M45.B.515,8945,25.05,Transect,Sample,Sediment,Sediment,45,Michigan,May,,,,clay,43,12.305,86,26.889
+MBRB1.515,MBR.B1.515,MBR.B.515,7561,24.06,Muskegon,Sample,Sediment,Sediment,16,Muskegon,May,,,,,,,,
+MBRB2.515,MBR.B2.515,MBR.B.515,10344,15.87,Muskegon,Sample,Sediment,Sediment,16,Muskegon,May,,,,,N/A,N/A,N/A,N/A
+MDPB1.515,MDP.B1.515,MDP.B.515,9266,10.45,Muskegon,Sample,Sediment,Sediment,24,Muskegon,May,,,,,N/A,N/A,N/A,N/A
+MDPB2.515,MDP.B2.515,MDP.B.515,8929,14.33,Muskegon,Sample,Sediment,Sediment,24,Muskegon,May,,,,,N/A,N/A,N/A,N/A
+MINB1.515,MIN.B1.515,MIN.B.515,11776,16.85,Muskegon,Sample,Sediment,Sediment,8,Muskegon,May,,,,,N/A,N/A,N/A,N/A
+MINB2.515,MIN.B2.515,MIN.B.515,9122,15.14,Muskegon,Sample,Sediment,Sediment,8,Muskegon,May,,,,,N/A,N/A,N/A,N/A
+MLBB1.S515,MLB.B1.515,MLB.B.515,8792,8.13,Transect,Sample,Sediment,Sediment,10,Muskegon,May,,,,black mud,N/A,N/A,N/A,N/A
+MLBB2.S515,MLB.B2.515,MLB.B.515,9677,14.67,Transect,Sample,Sediment,Sediment,10,Muskegon,May,,,,black mud,N/A,N/A,N/A,N/A
+MOTB1.515,MOT.B1.515,MOT.B.515,8438,2.86,Muskegon,Sample,Sediment,Sediment,11,Muskegon,May,,,,,N/A,N/A,N/A,N/A
+MOTB2.515,MOT.B2.515,MOT.B.515,7722,3.38,Muskegon,Sample,Sediment,Sediment,11,Muskegon,May,,,,,,,,
+110B1.S515,110.B1.515,110.B.515,14213,7.66,Transect,Sample,Sediment,Sediment,110,Michigan,May,,,,black mud,43,11.994,86,34.408
+110B1.S115,110.B1.115,110.B.115,10055,2.42,Transect,Sample,Sediment,Sediment,110,Michigan,October,,,,black mud,43,12.021,-86,34.235
+110B2.S115,110.B2.115,110.B.115,10819,3.28,Transect,Sample,Sediment,Sediment,110,Michigan,October,,,,black mud,43,12.021,-86,34.235
+M15B1.S115,M15.B1.115,M15.B.115,7424,4.24,Transect,Sample,Sediment,Sediment,15,Michigan,October,,,,sand,43,11.311,-86,20.671
+M15B2.S115,M15.B2.115,M15.B.115,7408,4.73,Transect,Sample,Sediment,Sediment,15,Michigan,October,,,,sand,43,11.311,-86,20.671
+M45B1.S115,M45.B1.115,M45.B.115,6990,2.57,Transect,Sample,Sediment,Sediment,45,Michigan,October,,,,clay,43,12.479,-86,26.946
+M45B2.S115,M45.B2.115,M45.B.115,7231,3.56,Transect,Sample,Sediment,Sediment,45,Michigan,October,,,,clay,43,12.479,-86,26.946
+MLBB1.S115,MLB.B1.115,MLB.B.115,7875,7.73,Transect,Sample,Sediment,Sediment,10,Muskegon,October,,,,black mud,43,14.211,-86,16.797
+MLBB2.S115,MLB.B2.115,MLB.B.115,8896,5.81,Transect,Sample,Sediment,Sediment,10,Muskegon,October,,,,black mud,43,14.211,-86,16.797
+110B1.S915,110.B1.915,110.B.915,10368,4.31,Transect,Sample,Sediment,Sediment,110,Michigan,September,,,,black mud,N/A,N/A,N/A,N/A
+110B2.S915,110.B2.915,110.B.915,11181,2.4,Transect,Sample,Sediment,Sediment,110,Michigan,September,,,,black mud,N/A,N/A,N/A,N/A
+M15B1.S915,M15.B1.915,M15.B.915,7843,5.6,Transect,Sample,Sediment,Sediment,15,Michigan,September,,,,sand,,,,N/A
+M15B2.S915,M15.B2.915,M15.B.915,7955,28.93,Transect,Sample,Sediment,Sediment,15,Michigan,September,,,,sand,N/A,N/A,N/A,N/A
+M45B1.S915,M45.B1.915,M45.B.915,8945,3.86,Transect,Sample,Sediment,Sediment,45,Michigan,September,,,,clay,N/A,N/A,N/A,N/A
+M45B2.S915,M45.B2.915,M45.B.915,7441,2.8,Transect,Sample,Sediment,Sediment,45,Michigan,September,,,,clay,,,,
+MDPB1.S915,MDP.B1.915,MDP.B.915,9226,7.46,Muskegon,Sample,Sediment,Sediment,24,Muskegon,September,,,,,N/A,N/A,N/A,N/A
+MDPB2.S915,MDP.B2.915,MDP.B.915,10063,8.54,Muskegon,Sample,Sediment,Sediment,24,Muskegon,September,,,,,N/A,N/A,N/A,N/A
+MINB1.S915,MIN.B1.915,MIN.B.915,10175,13.86,Muskegon,Sample,Sediment,Sediment,8,Muskegon,September,,,,,N/A,N/A,N/A,N/A
+MINB2.S915,MIN.B2.915,MIN.B.915,11141,9.61,Muskegon,Sample,Sediment,Sediment,8,Muskegon,September,,,,,N/A,N/A,N/A,N/A
+MLBB1.S916,MLB.B1.915,MLB.B.915,9226,12.71,Transect,Sample,Sediment,Sediment,10,Muskegon,September,,,,black mud,N/A,N/A,N/A,N/A
+MLBB2.S915,MLB.B2.915,MLB.B.915,9194,21.88,Transect,Sample,Sediment,Sediment,10,Muskegon,September,,,,black mud,N/A,N/A,N/A,N/A
+MOTB1.S915,MOT.B1.915,MOT.B.915,7682,2.59,Muskegon,Sample,Sediment,Sediment,11,Muskegon,September,,,,,,,,
+MOTB2.S915,MOT.B2.915,MOT.B.915,7617,2.31,Muskegon,Sample,Sediment,Sediment,11,Muskegon,September,,,,,,,,
+MBRB1.S915,MBR.B1.915,MBR.B.915,8374,9.51,Muskegon,Sample,Sediment,Sediment,16,Muskegon,September,,,,,N/A,N/A,N/A,N/A
+MBRB2.S915,MBR.B2.915,MBR.B.915,8253,11.23,Muskegon,Sample,Sediment,Sediment,16,Muskegon,September,,,,,N/A,N/A,N/A,N/A
+NFW.Blank,000.00.000,000.00.000,32.18,0.53,,Blank,Mussel,Blank,,,,,,,,,,,
+LM15.Q14.S,Q14.M2.S,Q14.M2.S.S,12492,1.9,Survey,Test,Mussel,Whole Mussel,,,,,,,,42,55.417,-87,58.717
+LM15.Q14.T,Q14.M2.T,Q14.M2.T.T,7231,12.37,Survey,Test,Mussel,Whole Mussel,,,,,,,,42,55.417,-87,58.717
+LM15.Q14.W,Q14.M1.715,Q14.M.715,11197,9.73,Survey,Test,Mussel,Whole Mussel,,,,,,,,42,55.417,-87,58.717
+FM45.SH,XXX.XX.XX2,XXX.XX.XX2,40.22,0.11,,Test,,,,,,,,,,,,,
+FM45.TS,XXX.XX.XX3,XXX.XX.XX3,136.7,2.42,,Test,,,,,,,,,,,,,
+FM45.ZM,XXX.XX.XX1,XXX.XX.XX1,24.13,0.52,,Test,,,,,,,,,,,,,
+Q11.L1.TS,Q11.L1.TS,Q11.L1.TS.TS,4496,63.54,Transect,Test,,,,,,,,,,44,41.3,-86,33.95
