@@ -1,0 +1,161 @@
+#This Script is used specifically for 
+#PERMANOVA Calculations for the Lake Michigan Microbiome Project
+
+
+#######################################
+#Sample Type
+set.seed(1)
+
+# Calculate bray curtis distance matrix
+final_bray <- phyloseq::distance(scale_Final, method = "bray")
+
+# make a data frame from the sample_data
+sampledf <- data.frame(sample_data(Final))
+
+# Adonis test
+adonis(final_bray ~ Type, data = sampledf)
+
+            #Df SumsOfSqs MeanSqs F.Model      R2 Pr(>F)    
+#Type        3    16.521  5.5071  23.261 0.23278  0.001 ***
+#Residuals 230    54.453  0.2368         0.76722           
+#Total     233    70.975                 1.00000           
+
+beta <- betadisper(final_bray, sampledf$Type)
+permutest(beta)
+
+            #Df  Sum Sq  Mean Sq      F N.Perm Pr(>F)    
+#Groups      3 0.27773 0.092576 12.111    999  0.001 ***
+ #Residuals 230 1.75810 0.007644                         
+
+##########################################
+#Permanova by Lake
+
+adonis(final_bray ~ Lake, data = sampledf)
+
+#           Df SumsOfSqs MeanSqs F.Model      R2 Pr(>F)    
+#Lake        1     8.168  8.1675   30.17 0.11508  0.001 ***
+#Residuals 232    62.807  0.2707         0.88492           
+#Total     233    70.975                 1.00000           
+
+beta <- betadisper(final_bray, sampledf$Lake)
+permutest(beta)
+
+            #Df  Sum Sq Mean Sq      F N.Perm Pr(>F)    
+#Groups      1 0.41828 0.41828 64.264    999  0.001 ***
+#Residuals 232 1.51004 0.00651
+
+########################################################
+#By Month Collected
+
+adonis(final_bray ~ Month_Collected, data = sampledf)
+
+                #Df SumsOfSqs MeanSqs F.Model      R2 Pr(>F)    
+#Month_Collected   6     6.763 1.12714  3.9846 0.09529  0.001 ***
+#Residuals       227    64.212 0.28287         0.90471           
+#Total           233    70.975                 1.00000           
+
+beta <- betadisper(final_bray, sampledf$Month_Collected)
+permutest(beta)
+
+          #Df  Sum Sq   Mean Sq      F N.Perm Pr(>F)
+#Groups      6 0.05374 0.0089564 1.5159    999  0.184
+#Residuals 227 1.34119 0.0059083 
+
+#########################################################
+#Depth_in_Meters
+
+adonis(final_bray ~ Depth_in_Meters, data = sampledf)
+
+                  #Df SumsOfSqs MeanSqs F.Model      R2 Pr(>F)    
+#Depth_in_Meters   7    15.613 2.23050  9.1055 0.21999  0.001 ***
+#Residuals       226    55.361 0.24496         0.78001           
+#Total           233    70.975                 1.00000 
+
+beta <- betadisper(final_bray, sampledf$Depth_in_Meters)
+permutest(beta)
+
+            #Df Sum Sq  Mean Sq      F N.Perm Pr(>F)    
+#Groups      7 1.6165 0.230924 27.506    999  0.001 ***
+#Residuals 226 1.8974 0.008395 
+
+##########################################################
+#Cruise
+
+adonis(final_bray ~ Cruise, data = sampledf)
+
+            #Df SumsOfSqs MeanSqs F.Model      R2 Pr(>F)    
+#Cruise      2     7.111  3.5554   12.86 0.10019  0.001 ***
+#Residuals 231    63.864  0.2765         0.89981           
+#Total     233    70.975                 1.00000 
+
+beta <- betadisper(final_bray, sampledf$Cruise)
+permutest(beta)
+
+            #Df  Sum Sq  Mean Sq      F N.Perm Pr(>F)    
+#Groups      2 0.50003 0.250016 36.837    999  0.001 ***
+#Residuals 231 1.56780 0.006787 
+
+##########################################################
+#Sediment vs. Mussel
+
+adonis(final_bray ~ Sed_or_Mus, data = sampledf)
+
+            #Df SumsOfSqs MeanSqs F.Model      R2 Pr(>F)    
+#Sed_or_Mus   1    14.700 14.7002  60.604 0.20712  0.001 ***
+#Residuals  232    56.274  0.2426         0.79288           
+#Total      233    70.975                 1.00000 
+
+beta <- betadisper(final_bray, sampledf$Sed_or_Mus)
+permutest(beta)
+
+            #Df  Sum Sq  Mean Sq      F N.Perm Pr(>F)   
+#Groups      1 0.06145 0.061453 7.5802    999  0.008 **
+#Residuals 232 1.88084 0.008107
+###########################################################
+#Cruise + Lake
+adonis(final_bray ~ Lake + Cruise, data = sampledf)
+
+            #Df SumsOfSqs MeanSqs F.Model      R2 Pr(>F)    
+#Lake        1     8.168  8.1675 31.2065 0.11508  0.001 ***
+#Cruise      2     2.610  1.3051  4.9866 0.03678  0.001 ***
+#Residuals 230    60.197  0.2617         0.84815           
+#Total     233    70.975                 1.00000  
+
+#Sed/Mus + Type
+adonis(final_bray ~ Sed_or_Mus + Type, data = sampledf)
+
+              #Df SumsOfSqs MeanSqs F.Model      R2 Pr(>F)    
+#Sed_or_Mus   1    14.700 14.7002  62.091 0.20712  0.001 ***
+#Type         2     1.821  0.9106   3.846 0.02566  0.001 ***
+#Residuals  230    54.453  0.2368         0.76722           
+#Total      233    70.975                 1.00000           
+
+#Sed/Mus + Lake
+adonis(final_bray ~ Sed_or_Mus + Lake, data = sampledf)
+
+              #Df SumsOfSqs MeanSqs F.Model      R2 Pr(>F)    
+#Sed_or_Mus   1    14.700  14.700  68.060 0.20712  0.001 ***
+#Lake         1     6.381   6.381  29.543 0.08991  0.001 ***
+#Residuals  231    49.893   0.216         0.70297           
+#Total      233    70.975                 1.00000 
+
+#Sed/Mus + Month Collected
+adonis(final_bray ~ Sed_or_Mus + Month_Collected, data = sampledf)
+
+                  #Df SumsOfSqs MeanSqs F.Model      R2 Pr(>F)    
+#Sed_or_Mus        1    14.700 14.7002  63.493 0.20712  0.001 ***
+#Month_Collected   6     3.950  0.6583   2.843 0.05565  0.001 ***
+#Residuals       226    52.325  0.2315         0.73723           
+#Total           233    70.975                 1.00000   
+
+#Sed/Mus + Cruise + Depth + Month
+adonis(final_bray ~ Sed_or_Mus + Cruise + Depth_in_Meters 
+       + Month_Collected, data = sampledf)
+
+#Df SumsOfSqs MeanSqs F.Model      R2 Pr(>F)    
+#Sed_or_Mus        1    14.700 14.7002  80.141 0.20712  0.001 ***
+#Cruise            2     5.812  2.9061  15.843 0.08189  0.001 ***
+#Depth_in_Meters   6     8.879  1.4798   8.068 0.12510  0.001 ***
+#Month_Collected   6     1.595  0.2659   1.450 0.02248  0.007 ** 
+#Residuals       218    39.988  0.1834         0.56341           
+#Total           233    70.975                 1.00000 
