@@ -7,32 +7,33 @@ source("http://bioconductor.org/biocLite.R")
 biocLite("phyloseq")
 ##########################################################################################
 #load necessary packages 
-library(ggplot2)
 library(magrittr)
-library(dplyr)
 library(scales)
 library(grid)
 library(reshape2)
 library(phyloseq)
 library(vegan)
+library(tidyverse)
 ##########################################################################################
-#saved 'Final' (raw phyloseq object) for later use
-save(Final, file = "Final.RData")
-
-#set-up working directory
-setwd("C:/Users/morga/Documents/UROP/Denef/Morgan/")
 
 #import data
-sharedfile = "Sed_QM.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.an.unique_list.shared"
-taxfile = "Sed_QM.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.an.unique_list.0.03.cons.taxonomy"
+sharedfile = "stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.an.shared"
+taxfile = "stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.an.0.03.cons.taxonomy"
 mapfile = "Metadata_Table.csv"
 
 #import mothur data and metadata
 mothur_data <- import_mothur(mothur_shared_file = sharedfile, mothur_constaxonomy_file = taxfile)
 metadata <- read.csv(mapfile)
+#Rename data so that mothur data matches metadata
+metadata$New_Name <- str_replace_all(string = metadata$New_Name,
+                                     pattern = "\\.", 
+                                     replacement = "_")
+metadata$Original_Name <- str_replace_all(string = metadata$Original_Name,
+                                     pattern = "\\.", 
+                                     replacement = "_")
 #convert metadata to phyloseq format
 metadata <- sample_data(metadata)
-rownames(metadata) <- metadata$New_Name
+rownames(metadata) <- metadata$Original_Name
 
 ##########################################################################################
 #alterations to metadata_table
@@ -53,12 +54,12 @@ metadata$Depth_in_Meters <- as.factor(metadata$Depth_in_Meters)
 #merge metadata into mothur file
 moth.merge = merge_phyloseq(mothur_data, metadata)
 #15 samples lost when metadata and mothur_data were merged together. 11 were blanks and controls. 4 were samples
-#missing samples: FM45.Ts, FM45.ZM, MLB.B1.S515.2, MLB.B1.S915
+#missing samples: NFW_Blank and MLBB1_S916, one of the samples says CONTAMINATED, so assuming it is this one.
 
 #reformat taxonomy file column names and rename
 colnames(tax_table(moth.merge))
-colnames(tax_table(moth.merge)) <- c("Kingdom", "Phylum", "Class", "Order", 
-                                     "Family", "Genus", "Rank7", "Rank8")
+colnames(tax_table(moth.merge)) <- c("Domain", "Phylum", "Class", "Order", 
+                                     "Family", "Genus", "Species")
 
 #filter out samples that I do not want to use, on the tutorial it says to use sample type
 #but for my metadata table I made a column named "Use" that has the same affect
@@ -68,7 +69,7 @@ moth.sub <- prune_taxa(taxa_sums(moth.sub) > 0, moth.sub) #unsure of what this s
 #make new data.frame by removing any eukaryotic cells from the (tax_table(moth.sub))
 Final <-
   moth.sub %>%
-  subset_taxa(Kingdom == "Bacteria" &
+  subset_taxa(Domain == "Bacteria" &
                 Family != "mitochondria" &
                 Class != "Chloroplast")
 
@@ -82,7 +83,6 @@ scale_Final <-scale_reads(physeq = Final, n = 5000, round = "matround")
 ############################################################################################################################
 ########################### Graph Sample Reads #############################################################################
 #Begin graphing with set that has removed eukaryotic "Final" (should not be different)
-theme_set(theme_bw()) + 
 
 ggplot(data.frame(sum = sample_sums(Final)), aes(sum)) + 
   geom_histogram(color = "black", fill = "indianred", stat = "bin", binwidth = 500) +
@@ -215,7 +215,7 @@ MusselSizePhy3 <- scale_Final %>%
   filter(Abundance > 0.03) %>%                        
   arrange(Phylum)
 
-ggplot(MusselSizePhy3, aes(x = Mussel_Classification, y = Abundance, fill = Phylum)) + 
+ggplot(MusselSizePhy3, aes(x = Mussel.Classification, y = Abundance, fill = Phylum)) + 
   # facet_grid(Station~.) +
   geom_bar(stat = "identity") +
   scale_fill_manual(values = phylum.colors) +
