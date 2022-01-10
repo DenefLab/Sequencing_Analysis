@@ -23,7 +23,8 @@ mapfile = "Metadata_Table.csv"
 
 #import mothur data and metadata
 mothur_data <- import_mothur(mothur_shared_file = sharedfile, mothur_constaxonomy_file = taxfile)
-metadata <- read.csv(mapfile)
+metadata <- read.csv(mapfile) %>%
+  select(-Read_Number)
 #Rename data so that mothur data matches metadata
 metadata$New_Name <- str_replace_all(string = metadata$New_Name,
                                      pattern = "\\.", 
@@ -75,7 +76,8 @@ Final <-
 
 #Scale the reads for "Final" by using code originally from Michelle Berry 
 #functions for "matround" and "scale_reads" found at end of document
-scale_Final <-scale_reads(physeq = Final, n = 5000, round = "matround")
+scale_Final <-scale_reads(physeq = Final,n=5000, round = "matround")
+
 ###########################################################################################################################
 
 
@@ -89,6 +91,10 @@ ggplot(data.frame(sum = sample_sums(Final)), aes(sum)) +
   ggtitle("Distribution of sample sequencing depth") + 
   xlab("Read counts") + 
   ylab("")
+# mean, max and min of sample read counts
+smin <- min(sample_sums(Final))
+smean <- mean(sample_sums(Final))
+smax <- max(sample_sums(Final))
 
 #Graph with eukaryotic cells included "moth.sub" (we don't expect this to be different)
 ggplot(data.frame(sum = sample_sums(moth.sub)), aes(sum)) +
@@ -202,6 +208,39 @@ ggplot(All_phylum3, aes(x = Sed_or_Mus, y = Abundance, fill = Phylum)) +
   # Remove x axis title
   theme(axis.title.x = element_blank()) + 
   #
+  guides(fill = guide_legend(reverse = TRUE, keywidth = 1, keyheight = 1)) +
+  ylab("Relative Abundance (Phyla > 3%) \n") +
+  ggtitle("Phylum Composition of Transect Sample \n Bacterial Communities by Sample Type")
+####################
+#Stacked barplot of Clostridium genera in all samples
+c_bot_screen <- scale_Final %>%
+  subset_samples(Use == "Sample") %>%
+  tax_glom(taxrank = "Genus") %>%
+  transform_sample_counts(function(x) {x/sum(x)} ) %>% 
+  psmelt() %>%                                        
+  filter(Abundance > 0.03) %>%                        
+  arrange(Family) 
+c_bot_screen <- subset_taxa(Final, Family == "Clostridiaceae_1")
+c_bot_genus <- subset_taxa(scale_Final, Genus == "Clostridium_sensu_stricto_1")
+
+plot_bar(c_bot_screen, x="Sed_or_Mus", fill="Genus") +   
+  geom_bar(aes(color=Genus, fill=Genus), stat="identity", position="stack")
+plot_bar(c_bot_screen, x="Type", fill="Genus") +   
+  geom_bar(aes(color=Genus, fill=Genus), stat="identity", position="stack")
+plot_bar(c_bot_screen, x="Sediment_Type", fill="Genus") +   
+  geom_bar(aes(color=Genus, fill=Genus), stat="identity", position="stack")
+plot_bar(c_bot_screen, x="Month_Collected", fill="Genus") +   
+  geom_bar(aes(color=Genus, fill=Genus), stat="identity", position="stack")
+c_bot_genus %>%
+  filter(abundance > 0) %>%
+plot_bar(., x="New_Name", fill="Genus") +   
+  geom_bar(aes(color=Genus, fill=Genus), stat="identity", position="stack") 
+
+ggplot(c_bot_screen, aes(x = Sediment_Type, y = Abundance, fill = Genus)) + 
+  #facet_grid(~.) +
+  geom_bar(stat = "identity", position = "stack") +
+  # Remove x axis title
+  theme(axis.title.x = element_blank()) + 
   guides(fill = guide_legend(reverse = TRUE, keywidth = 1, keyheight = 1)) +
   ylab("Relative Abundance (Phyla > 3%) \n") +
   ggtitle("Phylum Composition of Transect Sample \n Bacterial Communities by Sample Type")
