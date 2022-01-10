@@ -24,7 +24,9 @@ mapfile = "Metadata_Table.csv"
 #import mothur data and metadata
 mothur_data <- import_mothur(mothur_shared_file = sharedfile, mothur_constaxonomy_file = taxfile)
 metadata <- read.csv(mapfile) %>%
-  select(-Read_Number)
+  select(-Read_Number) %>%
+  mutate(Sediment_Type = ifelse(Sediment_Type == "clay ", "clay",
+                                ifelse(Sediment_Type == "", "Unlabeled", Sediment_Type)))
 #Rename data so that mothur data matches metadata
 metadata$New_Name <- str_replace_all(string = metadata$New_Name,
                                      pattern = "\\.", 
@@ -212,38 +214,102 @@ ggplot(All_phylum3, aes(x = Sed_or_Mus, y = Abundance, fill = Phylum)) +
   ylab("Relative Abundance (Phyla > 3%) \n") +
   ggtitle("Phylum Composition of Transect Sample \n Bacterial Communities by Sample Type")
 ####################
-#Stacked barplot of Clostridium genera in all samples
-c_bot_screen <- scale_Final %>%
-  subset_samples(Use == "Sample") %>%
-  tax_glom(taxrank = "Genus") %>%
-  transform_sample_counts(function(x) {x/sum(x)} ) %>% 
-  psmelt() %>%                                        
-  filter(Abundance > 0.03) %>%                        
-  arrange(Family) 
-c_bot_screen <- subset_taxa(Final, Family == "Clostridiaceae_1")
-c_bot_genus <- subset_taxa(scale_Final, Genus == "Clostridium_sensu_stricto_1")
 
-plot_bar(c_bot_screen, x="Sed_or_Mus", fill="Genus") +   
+#Stacked barplot of Clostridium genera in all samples
+clost_1 <- subset_taxa(Final, Family == "Clostridiaceae_1")
+c_bot_screen <- clost_1 %>%
+  tax_glom(taxrank = "Genus") %>%
+  #transform_sample_counts(function(x) {x/sum(x)} ) %>% We want raw reads, so skipping this step
+  psmelt() %>%                                        
+  arrange(Genus) %>%
+  #Include genera that contain Clostridium botulinum. https://www.arb-silva.de/browser/ssu-123/AF275922/
+  #These are sensu_stricto 1 and 18, including unclassified as well in case there are strains that
+  #produce bontE but are not yet described. Number of reads should be >0.
+  filter(Genus == "Clostridium_sensu_stricto_1" | 
+           Genus == "Clostridium_sensu_stricto_18" |
+           Genus == "Clostridiaceae_1_unclassified",
+         Abundance > 0)
+
+c_bot_family<- subset_taxa(Final, Family == "Clostridiaceae_1") %>%
+                subset_taxa(., str_detect(Genus, "Clost"))
+
+
+c25 <- c(
+  "dodgerblue2", "#E31A1C", # red
+  "green4",
+  "#6A3D9A", # purple
+  "#FF7F00", # orange
+  "black", "gold1",
+  "skyblue2", "#FB9A99", # lt pink
+  "palegreen2",
+  "#CAB2D6", # lt purple
+  "#FDBF6F", # lt orange
+  "gray70", "khaki2",
+  "maroon", "orchid1", "deeppink1", "blue1", "steelblue4",
+  "darkturquoise", "green1", "yellow4", "yellow3",
+  "darkorange4", "brown"
+)
+
+plot_bar(c_bot_family, x="Type", fill="Genus", facet_grid = ~Sediment_Type) +   
+  geom_bar(aes(color=Genus, fill=Genus), stat="identity", position="stack") +
+  scale_fill_manual(values = c25) +
+  scale_color_manual(values = c25) +
+  ylab("Number of Reads") +
+  xlab("Sample Type") +
+  theme(legend.position="bottom") +
+  ggtitle(expression("Presence of Clostridiaceae family sequences in 2015 sediment and mussel samples"))
+
+ggsave("clost_family_presence_2015.png",path = "./Figures", width = 12.5)
+
+c_bot_genus <- subset_taxa(Final, Genus == "Clostridium_sensu_stricto_1" | Genus ==
+                             "Clostridiaceae_1_unclassified")
+samples_per_matrix <- c_bot_genus@sam_data %>%
+  group_by(Type, Sediment_Type) %>%
+  summarize(count = n())
+
+write.csv(samples_per_matrix, file = "./Sample Matrices by type.csv")
+# c_bot_genus <- subset_taxa(scale_Final, Genus == "Clostridium_sensu_stricto_1" | Genus ==
+#                              "Clostridiaceae_1_unclassified")
+
+plot_bar(c_bot_genus, x="Type", fill="Genus", facet_grid = ~Sediment_Type) +   
+  geom_bar(aes(color=Genus, fill=Genus), stat="identity", position="stack") +
+  scale_fill_manual(values = c25) +
+  scale_color_manual(values = c25) +
+  ylab("Number of Reads") +
+  xlab("Sample Type") +
+  theme(legend.position="bottom") +
+  ggtitle(expression("Presence of"~italic("Clostridium botulinum")~
+                 "-like 16S sequences in 2015 sediment and mussel samples"))
+ggsave("c_bot_presence_2015.png",path = "./Figures", width = 12.5)
+
+plot_bar(c_bot_family, x="Sed_or_Mus", fill="Genus") +   
   geom_bar(aes(color=Genus, fill=Genus), stat="identity", position="stack")
-plot_bar(c_bot_screen, x="Type", fill="Genus") +   
+plot_bar(c_bot_family, x="Sediment_Type", fill="Genus") +   
   geom_bar(aes(color=Genus, fill=Genus), stat="identity", position="stack")
-plot_bar(c_bot_screen, x="Sediment_Type", fill="Genus") +   
-  geom_bar(aes(color=Genus, fill=Genus), stat="identity", position="stack")
-plot_bar(c_bot_screen, x="Month_Collected", fill="Genus") +   
-  geom_bar(aes(color=Genus, fill=Genus), stat="identity", position="stack")
+
+plot_bar(c_bot_genus, x="Month_Collected", fill="Genus", facet_grid = ~Sediment_Type) +   
+  geom_bar(aes(color=Genus, fill=Genus), stat="identity", position="stack") +
+  scale_fill_manual(values = c25) +
+  scale_color_manual(values = c25) +
+  ylab("Number of Reads") +
+  xlab("Sample Type") +
+  theme(legend.position = "bottom", axis.text.x = element_text(vjust =0.5)) 
+ggsave("c_bot_month_stype_2015.png",path = "./Figures", width = 12.5)
+
 c_bot_genus %>%
-  filter(abundance > 0) %>%
 plot_bar(., x="New_Name", fill="Genus") +   
   geom_bar(aes(color=Genus, fill=Genus), stat="identity", position="stack") 
 
-ggplot(c_bot_screen, aes(x = Sediment_Type, y = Abundance, fill = Genus)) + 
-  #facet_grid(~.) +
-  geom_bar(stat = "identity", position = "stack") +
-  # Remove x axis title
-  theme(axis.title.x = element_blank()) + 
-  guides(fill = guide_legend(reverse = TRUE, keywidth = 1, keyheight = 1)) +
-  ylab("Relative Abundance (Phyla > 3%) \n") +
-  ggtitle("Phylum Composition of Transect Sample \n Bacterial Communities by Sample Type")
+ggplot(c_bot_screen, aes(x = Sample, y = Abundance, fill = Genus)) + 
+      #facet_grid(~.) +
+      geom_bar(stat = "identity", position = "stack") +
+      # Remove x axis title
+      theme(legend.position = "bottom",
+            axis.text.x = element_text(angle = 90, hjust = 1)) + 
+      xlab("Sample Name") + 
+      guides(fill = guide_legend(reverse = TRUE, keywidth = 1, keyheight = 1)) +
+      ylab("Number of Reads") +
+      ggtitle("Clostridiaceae_1 genera in \n Bacterial Communities by Sample Type")
 ##########################################################################################
 #Stacked bar plot by plyha >3% in the mussel samples distinguished by size
 MusselSizePhy3 <- scale_Final %>%
