@@ -228,7 +228,8 @@ c_bot_screen <- clost_1 %>%
   filter(Genus == "Clostridium_sensu_stricto_1" | 
            Genus == "Clostridium_sensu_stricto_18" |
            Genus == "Clostridiaceae_1_unclassified",
-         Abundance > 0)
+         Abundance > 0) %>%
+  select(Sample,New_Name, Abundance, Type, Sediment_Type, Genus, Month_Collected, Lake, Mussel_Density)
 
 c_bot_family<- subset_taxa(Final, Family == "Clostridiaceae_1") %>%
                 subset_taxa(., str_detect(Genus, "Clost"))
